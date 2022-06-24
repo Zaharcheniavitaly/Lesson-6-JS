@@ -21,7 +21,12 @@
 	<script>
 		'use strict';
 
-
+		let divEll = document.querySelectorAll('div');
+		divEll.forEach(div => {
+			console.log(div);
+			div.style.padding = '10px';
+			console.log(div.style);
+		});
 
 	</script>
 </body>
