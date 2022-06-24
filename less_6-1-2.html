@@ -28,6 +28,14 @@
 			console.log(div.style);
 		});
 
+		// или с помощью for:
+
+		let divEll2 = document.getElementsByTagName('div');
+		for (let i = 0; i < divEll2.length; i++) {
+			divEll2[i].style.padding = '30px';
+			console.log(divEll2[i].style);
+		}
+
 	</script>
 </body>
 
