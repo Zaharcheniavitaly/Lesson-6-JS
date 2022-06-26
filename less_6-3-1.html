@@ -46,8 +46,14 @@
 	<script>
 		'use strict';
 
-		function closeClickHandler(event) {
+		let closeEl = document.querySelectorAll('.close');
 
+		closeEl.forEach(button => {
+			button.addEventListener('click', closeClickHandler)
+		});
+
+		function closeClickHandler(event) {
+			event.currentTarget.parentNode.style.display = 'none';
 		}
 	</script>
 </body>
