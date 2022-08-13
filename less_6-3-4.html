@@ -500,14 +500,26 @@
 	<script>
 		'use strict';
 
-		let goToTopEl = document.getElementById('goToTop');
+		// let goToTopEl = document.getElementById('goToTop');
+
+		// window.addEventListener('scroll', function (event) {
+		// 	if (window.pageYOffset > 500) {
+		// 		goToTopEl.style.display = 'block';
+		// 	} if (window.pageYOffset <= 500) {
+		// 		goToTopEl.style.display = 'none';
+		// 	}
+		// 	console.log(window.pageYOffset);
+		// });
+
+		//или 
+
+		let goToTopEl2 = document.getElementById('goToTop');
 
 		window.addEventListener('scroll', function (event) {
 			if (window.pageYOffset > 500) {
-				goToTopEl.style.display = 'block';
-				if (window.pageYOffset <= 500) {
-					goToTopEl.style.display = 'none';
-				}
+				goToTopEl2.style.display = 'block';
+			} else {
+				goToTopEl2.style.display = 'none';
 			}
 			console.log(window.pageYOffset);
 		});
